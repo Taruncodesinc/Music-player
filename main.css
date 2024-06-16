@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Anurati";
+  src: url(/Anurati-Regular.otf);
+}
+body {
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.main {
+  background-color: #E4EBEB;
+}
+
+/* Container */
+.music-container {
+  position: relative;
+  border-radius: 0 0 110px 110px;
+  background: conic-gradient(white 325deg, purple 0deg);
+  overflow: hidden;
+}
+
+#progress-container {
+  background-image: linear-gradient(to left, blue, purple);
+}
+
+.music-image {
+  border-radius: 0 0 50vw 50vw;
+  border: solid #cfd7dc;
+  border-width: 0 13px 13px 13px;
+  box-shadow: 0 0 10px 15px rgb(191, 200, 205);
+  background-size: 100vh;
+  transition: background-image 0.5s linear;
+}
+
+.time-line {
+  border-radius: 0 0 50vh 50vh;
+  border: solid #cfd7dc;
+  border-width: 0 13px 13px 13px;
+  box-shadow: inset 0 0 10px 5px rgba(255, 255, 255, 0.5);
+}
+
+.progress-container {
+  position: relative;
+  width: 80%;
+  height: 10px;
+  background-color: #ccc;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.progress-line {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.progress-circle {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #4caf50;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: left 0.25s linear, background-color 0.25s linear;
+}
+
+.time {
+  background-image: linear-gradient(to top right, purple, rgb(255, 0, 255));
+  -webkit-background-clip: text;
+          background-clip: text;
+  font-size: 14px;
+  color: transparent;
+  font-weight: bold;
+}
+
+.song-name {
+  color: gray;
+  font-size: 22px;
+  font-family: "Montserrat Alternates";
+  letter-spacing: 0.5px;
+}
+
+.artist-name {
+  color: #91a2af;
+  font-weight: normal;
+  font-size: 20px;
+  font-family: "Montserrat";
+}
+
+#play {
+  cursor: pointer;
+}
+
+#play .play i {
+  color: purple;
+}
+
+#play .pause i {
+  color: purple;
+}
+
+i {
+  cursor: pointer;
+}
+
+.icon {
+  color: purple;
+  font-size: 30px;
+  box-shadow: -2px -2px 5px 5px rgba(255, 255, 255, 0.5), 2px 2px 5px 5px rgb(191, 200, 205);
+  height: 60px;
+  width: 60px;
+  margin: auto;
+  padding: au;
+  border-radius: 50%;
+}
+
+#rewind, #forward {
+  fill: yellow;
+  height: 50px;
+  width: 50px;
+}/*# sourceMappingURL=main.css.map */
